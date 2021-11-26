@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: rgb(246, 246, 248);
+            font-family:'Times New Roman', Times, serif
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background: rgb(5, 37, 56);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 85% 85%, 0% 100%);
+        }
+        #navbar{
+            display: flex;
+            background-color: rgba(15, 240, 240, 0.671);
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+        #logo{
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            margin: 10px 10px ;
+            color: white;
+        }
+        #logo img{
+            height: 50px;
+            width: 50px;
+            padding: 10px;
+        }
+        #navbar ul{
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+        #navbar ul li{
+            font-size: 1.3rem;
+            font-family: 'Roboto', sans-serif;
+            list-style: none;
+        }
+        #navbar ul li a{
+            display: block;
+            margin: 7px 20px;
+            padding: 10px 6px;
+            color: white;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            
+            color: white;
+        }
+
+        .left{
+            flex-basis: 70%;
+        
+        }
+
+        .right{
+            max-width: 450px;
+            flex-basis: 30%;
+font-family: 'Merriweather', serif;        }
+
+        .right h1{
+            font-size: 40px;
+            margin: 25px 50px;
+
+        }
+
+        .right h4{
+            font-size: 20px;
+            margin: 10px 55px;
+        }
+        .bottom
+        {
+            position: sticky;
+            height: 100px;
+            background-color: #ffffff;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #contact{
+            padding: 30px 0px;
+        }
+
+        .contact-row{
+            padding: 50px;
+            text-align: center;
+            display: flex;
+        }
+
+        .contact-first{
+            padding-top: 50px;
+            flex-basis: 50%;
+            max-width: 450px;
+            margin: auto;
+        }
+
+        .service-info{
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact-second{
+            padding-top: 50px;
+            flex-basis: 50%;
+        }
+
+        .contact-third{
+            padding-top: 50px;
+            flex-basis: 50%;
+        }
+
+        .contact-fourth{
+            padding-top: 50px;
+            flex-basis: 50%;
+        }
+
+        .fa-address-book{
+            padding: 7px;
+        }
+
+        .fa-envelope{
+            padding: 7px;
+        }
+        #check{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="https://www.pngkit.com/png/full/189-1891833_human-rights-no-background.png" alt="logo">ITPS
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/index">Project Details</a></li>
+                <li><a href="#contact">Group Members</a></li>
+            </ul>
+        </nav>  
+        <div class="container">
+            <div class="left">
+                <img src="https://thumbs.dreamstime.com/b/payroll-business-finance-concept-virtual-screen-payroll-business-finance-concept-virtual-screen-159813801.jpg" height="600" width="1000" alt="Payroll">
+            </div>
+            <div class="right">
+                <h1>Salary Management System </h1>
+                <h4>Assigned by:  Prof. Minal Bhise</h4>
+                <h4>Group: S8</h4>
+                <h4>Team: 5</h4>
+            </div>
+        </div>
+    </header>
+    
+    <section id="contact">
+        <div class="service-info">
+            <h1>Group <span id="blue">Members</span></h1>
+        </div>
+
+        <div class="contact-row">
+            <div class="contact-first">
+                <h2>Aryan Patel</h2><br>
+                <h1><i class="fa fa-envelope" aria-hidden="true"></i><br></h1><p> 201901021@daiict.ac.in</p><br>
+            </div>
+
+            <div class="contact-second">
+                <h2>Chirag Shah</h2><br>
+                <h1><i class="fa fa-envelope" aria-hidden="true"></i><br></h1><p> 201901023@daiict.ac.in</p><br>
+            </div>
+
+            <div class="contact-third">
+                <h2>Meet Panchal</h2><br>
+                <h1><i class="fa fa-envelope" aria-hidden="true"></i><br></h1><p> 201901040@daiict.ac.in</p><br>
+            </div>
+
+            <div class="contact-fourth">
+                <h2>Meet Shah</h2><br>
+                <h1><i class="fa fa-envelope" aria-hidden="true"></i><br></h1><p> 201901041@daiict.ac.in</p><br>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div id="check">
+            Copyright &copy; www.myPayroll.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

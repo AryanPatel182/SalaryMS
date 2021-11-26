@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-8 offset-md-2">
+
+                <div class="card">
+                    <div class="card-header shadow-sm bg-white">
+                        <h1 class="display-5 text-info"><i class="fas fa-check-double"></i> Salary Mangement System</h1>
+                        <a href="/index">Back</a>
+                    </div>
+                    <form action="/insert_employee" method="post">
+                        {% csrf_token %}
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="employee_id" placeholder="Employee ID" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" name="gender" placeholder="Gender" required>
+                            </div>
+                            <div class="col">
+                                <input type="date" class="form-control" name="dob" placeholder="DOB" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="date" class="form-control" name="joining_date" placeholder="Joining Date" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" name="department_id" placeholder="Department ID" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="mb-3 btn btn-primary btn-lg btn-block">Add</button>
+                    
+                    </from>
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Gender</th>
+                                <th scope="col">DOB</th>
+                                <th scope="col">Joining Date</th>
+                                <th scope="col">Department Id</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for emp in emp_list %}
+                            <tr>
+                                <td> {{emp.employee_id}}</td>
+                                <td> {{emp.first_name}}</td>
+                                <td> {{emp.last_name}}</td>
+                                <td> {{emp.email}}</td>
+                                <td> {{emp.gender}}</td>
+                                <td> {{emp.dob}}</td>
+                                <td> {{emp.joining_date}}</td>
+                                <td> {{emp.department_id.department_id}}</td>     
+                                <td>
+                                    <form action="delete_employee/{{emp.employee_id}}" method="post" class="float-right d-inline">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn">
+                                            <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

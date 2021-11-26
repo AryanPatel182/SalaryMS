@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DBMS</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <style>
+        .tmp{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">    
+    <div class="card-header shadow-sm bg-white">
+        <h1 class="display-5 text-info"><a href="/" style= "color:#17A2C3"><i class="fas fa-check-double"> Salary Management System</i></a></h1>
+
+    </div>
+    
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/department">Department</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/employee">Employee</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/employee_address">Address</a></li>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/phone_number">Phone</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/administrator">Administrator</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/account_detail">Acount Details</a></li>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/login">Login Details</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/transaction">Transaction Details</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/salary">Salary</a></li>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/allowance">Allowance</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/attendance">Attendance</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/deduction">Deduction</a></li>
+            </div>
+            <div class="col-sm">
+                <li class="list-group-item"><a href="/leave">Leave</a></li>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm tmp">
+                <div class="card">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Get Your Salary Slip</h5>
+                        <p class="card-text">Click on the below button to get your salary slip</p>
+                        <a href="/slip" class="btn btn-primary">Salary Slip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm tmp">
+                <div class="card">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Get Your Leave Details</h5>
+                        <p class="card-text">Click on the below button to get information of employees leave </p>
+                        <a href="/leave_slip" class="btn btn-primary">Leave Slip</a>
+                    </div>
+                </div>              
+            </div>
+            <div class="col-sm tmp">
+                <div class="card">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Get Address Details</h5>
+                        <p class="card-text">Click on the below button to get address information</p>
+                        <a href="/query" class="btn btn-primary">Address Details</a>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+    <!-- <ul class="list-group">        
+        <li class="list-group-item"><a href="/department">Department</a></li>
+        <li class="list-group-item"><a href="/employee">Employee</a></li>
+        <li class="list-group-item"><a href="/employee_address">Address</a></li>
+        <li class="list-group-item"><a href="/phone_number">Phone</a></li>        
+        <li class="list-group-item"><a href="/administrator">Administrator</a></li>        
+        <li class="list-group-item"><a href="/account_detail">Acount Details</a></li>        
+        <li class="list-group-item"><a href="/login">Login Details</a></li>        
+        <li class="list-group-item"><a href="/transaction">Transaction Details</a></li>        
+        <li class="list-group-item"><a href="/salary">Salary</a></li>        
+        <li class="list-group-item"><a href="/allowance">Allowance</a></li>        
+        <li class="list-group-item"><a href="/attendance">Attendace</a></li>        
+        <li class="list-group-item"><a href="/deduction">Deduction</a></li>        
+        <li class="list-group-item"><a href="/leave">Leave</a></li>        
+    </ul> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
